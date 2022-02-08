@@ -1,19 +1,17 @@
-pipeline{
-  agent any
-    stages{
-      stage("checkout"){
-        steps{
-          echo "clone"
+pipeline {
+    agent any
+
+    stages {
+        stage('scm') {
+            steps {
+                echo 'Hello World'
+            }
         }
-     }
-  }
-pipeline{
-agent any
-stages{
-    stage("checkout"){
-        steps{
-            echo "adding jenkins"
+        stage('build') {
+            steps {
+                echo 'Hello World'
+            }
         }
     }
 }
-}}
+   
